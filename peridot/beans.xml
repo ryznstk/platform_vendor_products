@@ -1,12 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!--
-     SPDX-FileCopyrightText: 2026 LumineDroid
+     SPDX-FileCopyrightText: 2026 ASCP
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest>
 
   <!-- devices -->
   <project path="device/xiaomi/peridot" name="ryznstk/pure" remote="github" revision="ascp" />
+  <project path="device/xiaomi/peridot-miuicamera" name="ryznstk/android_device_xiaomi_peridot-miuicamera" remote="github" revision="sixteen-qpr2" />
+
   <project path="kernel/xiaomi/sm8635" name="kernel_xiaomi_sm8635" remote="gitlab" revision="resuki" />
   <project path="kernel/xiaomi/sm8635-devicetrees" name="ryznstk/kernel_xiaomi_sm8635-devicetrees" remote="github" revision="lineage-23.2" />
   <project path="kernel/xiaomi/sm8635-modules" name="ryznstk/kernel_xiaomi_sm8635-modules" remote="github" revision="lineage-23.2" />
@@ -16,5 +18,15 @@
 
   <!-- vendor -->
   <project path="vendor/xiaomi/peridot" name="blu96/vendor-xiaomi-peridot-yt" remote="gitlab" revision="a17new"/>
+  <project path="vendor/xiaomi/peridot-miuicamera" name="blu96/proprietary_vendor_xiaomi_peridot-miuicamera" remote="gitlab" revision="sixteen-qpr2"/>
+
+  <!-- packages -->
+  <project path="packages/apps/GameBar" name="ryznstk/packages_apps_GameBar" remote="github" revision="lineage-23.2" />
+  <project path="packages/apps/KProfiles" name="ryznstk/packages_apps_KProfiles" remote="github" revision="sixteen" />
+  <project path="packages/apps/TouchServices" name="ryznstk/packages_apps_TouchServices" remote="github" revision="lineage-23.2" />
+  <project path="packages/apps/ViPER4AndroidFX" name="TogoFire/packages_apps_ViPER4AndroidFX" remote="github" revision="v4a" />
+
+  <!-- Remove XiaomiParts if it exists locally -->
+  <remove-project name="packages/apps/XiaomiParts" optional="true"/>
 
 </manifest>
