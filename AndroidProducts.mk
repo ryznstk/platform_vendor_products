@@ -5,3 +5,4 @@
 
 PRODUCT_MAKEFILES += \
     $(LOCAL_DIR)/marble/marble.mk \
+    $(LOCAL_DIR)/peridot/peridot.mk
